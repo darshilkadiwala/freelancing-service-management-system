@@ -1,0 +1,202 @@
+.main-wrapper {
+    background: var(--first-color);
+    color: #EDEDED;
+}
+
+.service-title {
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.service-row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+.service-container {
+    width: 100%;
+    padding: 15px;
+    margin: auto;
+}
+
+.service-row .service-col {
+    width: 60%;
+}
+
+.service-row .service-col,
+.service-row .service-col-auto {
+    position: relative;
+    display: block;
+}
+
+.service-row .service-col-auto {
+    width: auto;
+    padding: 20px;
+    /* position: sticky; */
+}
+
+.service-row .service-col-auto .buttons {
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+.service-row .service-col .mySlides {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.service-row .service-col .mySlides img {
+    width: 100%;
+    pointer-events: none;
+}
+
+.service-row .service-col .service-short-desc,
+.service-row .service-col .service-about,
+.service-row .service-col .service-seller,
+.service-row .service-col .service-about .service-about-date {
+    width: 100%;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--second-color);
+    margin-top: 30px;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+
+.service-row .service-col .service-short-desc .service-short-desc-heading,
+.service-row .service-col .service-about .service-about-heading {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.service-row .service-col .service-short-desc .service-short-desc-text,
+.service-row .service-col .service-about .service-about-text {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.service-row .service-col .service-seller {
+    height: auto;
+}
+
+.service-row .service-col .service-seller .service-seller-heading,
+.service-row .service-col .service-about .service-about-date .service-about-date-heading {
+    font-weight: 700;
+}
+
+.service-row .service-col .service-seller .seller-info {
+    background-color: #EDEDED;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, .4);
+    color: var(--first-color);
+}
+
+.service-row .service-col .service-seller .seller-info .seller-profile {
+    /* background-color: black; */
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* border-bottom: 1px solid var(--second-color); */
+}
+
+.service-row .service-col .service-seller .seller-info .seller-profile .seller-profile-img {
+    justify-content: flex-start;
+    display: flex;
+    margin-right: 25px;
+}
+
+.service-row .service-col .service-seller .seller-info .seller-profile .seller-profile-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    justify-content: left;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, .4);
+}
+
+.service-row .service-col .service-seller .seller-info .seller-profile .seller-profile-label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.service-row .service-col .service-seller .seller-info .seller-profile .seller-profile-label .username .Link3 {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    text-transform: none;
+}
+
+.service-row .service-col .service-seller .seller-info .seller-profile .seller-profile-label .username .Link3:hover {
+    color: var(--first-color);
+}
+
+.service-row .service-col .service-seller .seller-info .seller-profile .seller-profile-label .occupation {
+    font-size: 1.3rem;
+}
+
+.service-row .service-col .service-seller .seller-info .seller-profile .seller-profile-label .Btn1 {
+    color: var(--second-color);
+    margin-top: 5px;
+}
+
+.service-row .service-col .service-seller .seller-info .seller-profile .seller-profile-label .Btn1:hover {
+    color: var(--first-color);
+    border: 1px solid var(--first-color);
+}
+
+.service-row .service-col .service-seller .seller-info .stats-desc {
+    border: 1px solid var(--first-color);
+    margin-top: 0;
+    border-radius: 3px;
+    padding: 24px;
+}
+
+.service-row .service-col .service-seller .seller-info .stats-desc .user-stats {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.service-row .service-col .service-seller .seller-info .stats-desc .user-stats li {
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-bottom: 16px;
+}
+
+.service-row .service-col .service-seller .seller-info .stats-desc .user-stats li strong {
+    display: block;
+    padding-top: 4px;
+}
+
+.service-row .service-col .service-seller .seller-info .stats-desc .seller-about {
+    line-height: 150%;
+    text-align: left;
+    border-top: 1px groove var(--first-color);
+    padding-top: 15px;
+    margin: 0;
+    font-weight: 600;
+}
+
+td {
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: var(--first-color);
+    pointer-events: none;
+}

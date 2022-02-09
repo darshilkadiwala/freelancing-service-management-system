@@ -1,0 +1,417 @@
+/* ========================================= Side Navigation ======================================================= */
+
+.l-navbar {
+    width: 56px;
+    background-color: var(--first-color);
+    padding: .5rem;
+    margin-right: 5rem;
+    -webkit-transition: .5s;
+    transition: .5s;
+    border-radius: 10px;
+    position: absolute;
+    top: 13%;
+    box-shadow: 0 0 15px var(--first-color);
+}
+
+.l-nav {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+
+/* .nav-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0 .5rem;
+} */
+
+.nav-toggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 2rem;
+    color: var(--second-color);
+    margin-bottom: .5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-transition: .1s;
+    transition: .1s;
+}
+
+.l-nav-toggle:hover,
+.l-nav-toggle.active {
+    background-color: var(--white-color);
+    color: var(--first-color);
+    transition: .1s;
+}
+
+.l-nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    color: var(--white-color);
+    -webkit-transition: .1s;
+    transition: .1s;
+}
+
+.l-nav-link .fa:hover,
+.l-nav-link.active i.fa,
+.l-nav-list .l-nav-link:hover,
+.l-nav-list .l-nav-link:hover .fa,
+.l-nav-list .l-nav-link:hover .fa:hover {
+    background-color: var(--second-color)!important;
+    color: var(--first-color)!important;
+}
+
+.nav-icon,
+.l-nav-link .fa {
+    font-size: 1.7rem;
+    margin-right: 1rem;
+}
+
+.l-nav-link .fa.nav-icon {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    color: var(--white-color);
+}
+
+.nav-text {
+    font-weight: 700;
+}
+
+.nav-btn,
+.l-nav-link.nav-btn {
+    background-color: var(--white-color);
+    color: var(--first-color);
+}
+
+.Btn:active {
+    background: #fff;
+}
+
+
+/*Show menu*/
+
+.show-l-navbar {
+    width: 190px;
+    display: block;
+    padding: 1rem;
+}
+
+.l-navbar.show-l-navbar .nav-toggle:hover {
+    background-color: var(--second-color);
+    transition: .1s;
+}
+
+.show-l-navbar .l-nav-link {
+    margin: .5rem;
+    transition: .5s;
+}
+
+
+/*Rotate toggle*/
+
+.rotate180 {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: .1s;
+    transition: .1s;
+}
+
+
+/*Active links menu*/
+
+.l-nav-link.active {
+    background-color: var(--second-color);
+    color: var(--first-color);
+    text-decoration: underline;
+}
+
+
+/*Add padding body*/
+
+.l-nav-expander {
+    margin: 0;
+    margin-left: 13rem !important;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+a.l-nav-link *,
+a.l-nav-link {
+    text-decoration: none;
+    transition: .08s;
+}
+
+.show-l-navbar .l-nav-list .l-nav-link:hover {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 7px 7px 7px rgb(11, 151, 23), 7px -7px 7px rgb(11, 151, 23), -7px 7px 7px rgb(11, 151, 23), -7px -7px 7px rgb(11, 151, 23);
+}
+
+a.l-nav-link.active .nav-text,
+a.t-nav-link.active .nav-text {
+    text-decoration: underline;
+}
+
+
+/* =========================================Navigation top======================================================= */
+
+.t-nav-toggle {
+    display: none;
+}
+
+.t-navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: var(--second-color);
+    padding: .3rem;
+    border-radius: 10px;
+    -webkit-transition: .1s;
+    transition: .1s;
+    width: 100%;
+    z-index: var(--z-modal);
+    border: none;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .1);
+}
+
+.t-nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: .4rem;
+}
+
+.t-navbar-brand {
+    display: flex;
+    padding: .3rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.nav-logo-icon {
+    width: 35px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.t-navbar.active .t-navbar-brand img.nav-logo-icon,
+.t-navbar.active .t-navbar-brand:hover img.nav-logo-icon {
+    content: url(/FSMS/assets/icon/icon1.png);
+}
+
+.t-navbar-brand:hover {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+
+.t-navbar.active .t-navbar-brand:hover {
+    background-color: var(--second-color);
+    color: var(--first-color);
+}
+
+.t-navbar .t-navbar-brand:hover img.nav-logo-icon,
+.t-navbar.active .t-navbar-brand img.nav-logo-icon {
+    content: url(/FSMS/assets/icon/icon2.png);
+}
+
+.nav-logo-text {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.t-nav-link {
+    border-radius: .5rem;
+}
+
+.t-nav-link {
+    padding: .5rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 50px;
+    margin: .5rem;
+    color: var(--white-color);
+    -webkit-transition: .1s;
+    transition: .1s;
+}
+
+.t-nav .t-nav-list .profile {
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--white-color);
+    transition: .1s;
+}
+
+.t-nav .t-nav-list .profile,
+.t-nav .t-nav-list .profile .profile-icon {
+    position: relative;
+    cursor: pointer;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.t-nav .t-nav-list .profile-dropdown {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background: #fff;
+    padding: 10px 25px;
+    display: none;
+    border-radius: 5px;
+}
+
+.t-nav .t-nav-list .profile-dropdown:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.profile.active .profile-dropdown {
+    display: block;
+}
+
+.profile-dropdown .bx {
+    margin-right: 10px;
+    transition: .1s;
+}
+
+.t-navbar.active .t-nav .t-nav .t-nav-list .profile .nav-text {
+    font-weight: 700;
+    color: var(--second-color);
+}
+
+.t-navbar.active .t-nav .t-navbar-brand .nav-logo-text {
+    color: var(--first-color);
+}
+
+.t-nav-link:hover,
+.t-nav-link.active {
+    font-weight: 700;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    text-decoration: underline;
+}
+
+a.t-nav-link {
+    text-decoration: none;
+}
+
+.t-navbar.active {
+    position: fixed;
+    margin: 5px;
+    max-width: calc(100vw - 1vw);
+    background: var(--white-color);
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 1);
+    z-index: var(--z-modal);
+}
+
+.t-navbar.active .t-nav-link,
+.t-navbar.active .t-nav .t-nav-list .profile {
+    color: #F5A623;
+    font-weight: bold;
+}
+
+.t-navbar.active .t-nav-link:hover,
+.t-navbar.active .t-nav-link:focus {
+    color: #F5A623;
+    text-decoration: underline;
+}
+
+.t-navbar.active .t-navbar-brand {
+    color: var(--second-color);
+}
+
+#t-nav-body,
+#l-nav-body {
+    padding: 5px;
+    transition: .1s;
+}
+
+
+/* 
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+} */
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}

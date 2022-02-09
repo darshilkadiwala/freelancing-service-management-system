@@ -1,0 +1,33 @@
+/*------------------------
+	icons
+-------------------------*/
+@function unicode($str) {
+  @return unquote("\"\\#{$str}\"");
+}
+
+$icon-archive-2-2: unicode(ea01);
+$icon-archive-2: unicode(ea02);
+$icon-camera-20-2: unicode(ea03);
+$icon-camera-20-3: unicode(ea04);
+$icon-camera-20: unicode(ea05);
+
+.icon-archive-2-2::before {
+  content: $icon-archive-2-2;
+}
+
+.icon-archive-2::before {
+  content: $icon-archive-2;
+}
+
+.icon-camera-20-2::before {
+  content: $icon-camera-20-2;
+}
+
+.icon-camera-20-3::before {
+  content: $icon-camera-20-3;
+}
+
+.icon-camera-20::before {
+  content: $icon-camera-20;
+}
+

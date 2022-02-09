@@ -1,0 +1,126 @@
+.mycard-container {
+    border: none;
+    display: flex;
+    width: auto;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    user-select: none;
+}
+
+.mycard {
+    position: relative;
+    width: 250px;
+    max-height: 400px;
+    background: #fff;
+    margin: 10px 7px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px var(--first-color);
+    transition: .5s;
+    color: var(--first-color);
+}
+
+.mycard:hover {
+    transform: scale(1.05);
+}
+
+.mycard .mycard-service-img {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    min-height: 45%;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    user-select: none;
+}
+
+.mycard .mycard-service-img img {
+    width: 100%;
+    min-height: 45%;
+    max-height: 45%;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.mycard .mycard-text {
+    border: none;
+    border-top: 1px solid lightcoral;
+    margin: 0 15px;
+    font-weight: 500;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.mycard .mycard-price {
+    border: none;
+    border-top: 1px solid lightcoral;
+    height: 30px;
+    margin: 10px 20px 10px;
+    font-weight: 500;
+    text-align: right;
+    user-select: none;
+}
+
+.mycard .mycard-text .mycard-title a {
+    text-decoration: none;
+    user-select: none;
+}
+
+.mycard .mycard-text .mycard-title {
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    user-select: none;
+}
+
+.mycard .mycard-text .mycard-short-desc {
+    font-size: .85rem;
+    font-weight: 300;
+    color: lightseagreen;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-height: 1rem;
+    user-select: none;
+}
+
+.mycard .mycard-user-info {
+    font-size: .89rem;
+    font-weight: 300;
+    color: lightseagreen;
+    justify-content: space-between;
+    /* border-top: 1px solid lightcoral; */
+    align-items: center;
+    margin: 10px 20px 5px;
+    display: flex;
+    /* bottom: 0; */
+    cursor: pointer;
+    user-select: none;
+}
+
+.mycard .mycard-user-info .username {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--first-color);
+    user-select: none;
+}
+
+.mycard .mycard-user-info .user-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    user-select: none;
+    overflow: hidden;
+}
+
+.mycard .mycard-user-info .user-profile img {
+    height: 100%;
+    width: 100%;
+    user-select: none;
+}
